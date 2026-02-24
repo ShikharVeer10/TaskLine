@@ -1,11 +1,3 @@
-"""
-User management endpoints.
-
-POST /users/signup     →  Register a new user
-GET  /users/me         →  Get current user's profile
-PATCH /users/me        →  Update current user's profile
-GET  /users/{user_id}  →  Get a user by ID (superuser only)
-"""
 from fastapi import APIRouter, HTTPException, status
 from sqlmodel import select, func
 
